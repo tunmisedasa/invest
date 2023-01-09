@@ -1,0 +1,48 @@
+
+
+}
+
+  #wallet-actions {
+    display: flex;
+  }
+
+  #investment-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #investment-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #investment-history {
+    list-style: none;
+  }
+
+  #investment-limits {
+    display: flex;
+    justify-content: center;
+  }
+
+  #message-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .error {
+    color: red;
+  }
+
+  .success {
+    color: green;
+  }
+</style>
+
+<!-- JavaScript code to connect to the smart contract and interact with it -->
+<script>
+  // Connect to the smart contract
+ 
