@@ -1,0 +1,49 @@
+
+
+
+
+
+
+<!-- HTML structure for the website -->
+<div id="app">
+  <!-- Wallet connection and disconnection buttons -->
+  <div id="wallet-actions">
+    <button id="connect-wallet-btn" onclick="connectWallet()">Connect Wallet</button>
+    <button id="disconnect-wallet-btn" onclick="disconnectWallet()">Disconnect Wallet</button>
+  </div>
+
+  <!-- Investment actions and display -->
+  <div id="investment-actions">
+    <!-- Investment input and buttons -->
+    <input type="number" id="investment-input" placeholder="Enter investment amount">
+    <button id="invest-btn" onclick="invest()">Invest</button>
+    <button id="reinvest-btn" onclick="reinvest()">Reinvest</button>
+    <button id="withdraw-btn" onclick="withdraw()">Withdraw</button>
+
+    <!-- Investment progress and history display -->
+    <div id="investment-display">
+      <p>Investment Progress: <span id="investment-progress"></span> BNB</p>
+      <p>Investment History:</p>
+      <ul id="investment-history"></ul>
+    </div>
+  </div>
+
+  <!-- Minimum and maximum investment display -->
+  <div id="investment-limits">
+    <p>Minimum Investment: <span id="min-investment"></span> BNB</p>
+    <p>Maximum Investment: <span id="max-investment"></span> BNB</p>
+  </div>
+
+  <!-- Error and success message display -->
+  <div id="message-display">
+    <p id="error-message" class="error"></p>
+    <p id="success-message" class="success"></p>
+  </div>
+</div>
+
+<!-- CSS styles for the website -->
+<style>
+  #app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
